@@ -36,6 +36,13 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <dependency>
+            <!--声明spring boot内嵌tomcat的作用范围，在运行时不起作用-->
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <build>
